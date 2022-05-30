@@ -1,0 +1,152 @@
+<style>
+  body {
+    margin: 0px;
+    font-family: sans-serif;
+    background-color: #000;
+  }
+</style>
+<div
+  style="
+    position: absolute;
+    color: #fff;
+    padding: 8px;
+
+    font-size: 14px;
+    user-select: none;
+  "
+>
+  <span>Score:<span id="scoreID">0</span></span>
+</div>
+
+<div
+  id="startModalID"
+  style="
+    position: absolute;
+    background-color: #fff;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    padding: 16px;
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+  "
+>
+  <h1 style="font-size: 24px; margin-bottom: 0; margin-top: 8px">
+    Base defense game
+  </h1>
+
+  <button
+    id="startButtonID"
+    style="
+      margin-top: 12px;
+      font-size: 14px;
+      color: #fff;
+      background-color: blue;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      padding: 5px 10px;
+    "
+  >
+    Start Game
+  </button>
+</div>
+
+<div
+  id="ReStartModalID"
+  style="
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    padding: 16px;
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+  "
+>
+  <label style="font-size: 14px; color: #000">Game Over</label>
+  <h1
+    id="modalScoreID"
+    style="font-size: 48px; margin-bottom: 0; margin-top: 8px"
+  >
+    0
+  </h1>
+  <p style="margin: 0; font-size: 14px; color: #000">Points</p>
+  <button
+    id="RestartButtonID"
+    style="
+      margin-top: 12px;
+      font-size: 14px;
+      color: #fff;
+      background-color: blue;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      padding: 5px 10px;
+    "
+  >
+    Restart
+  </button>
+</div>
+
+<div
+  id="LevelStartID"
+  style="
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    padding: 16px;
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+  "
+>
+ 
+  <h1
+    
+    style="font-size: 48px; margin-bottom: 0; margin-top: 8px"
+  >
+ Level 2
+  </h1>
+
+  <button
+    id="LevelStartButtonID"
+    style="
+      margin-top: 12px;
+      font-size: 14px;
+      color: #fff;
+      background-color: blue;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      padding: 5px 10px;
+    "
+  >
+    Start
+  </button>
+</div>
+
+<canvas></canvas>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+  integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+></script>
+<!-- <script
+  src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
+  integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+></script> -->
+<script src="/index.js"></script>
